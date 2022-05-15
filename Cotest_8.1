@@ -1,0 +1,55 @@
+""" 위장 """
+# 합의 법칙, 곱의법칙 이용
+# 각 키의 밸류를 카운트하여 합의 법칙 곱의 법칙 이용
+# 곱의 법칙 : 동시에 일어날 수 있는 경우, 연달아 발생하는 경우 (옷 조합)
+# 합의 법칙 : 동시에 일어날 수 없는 경우(개별일 경우)
+# 예상 : 매치 할 수 있는 방법의 개수 = 곱의 법칙 + 합의 법칙 -1 
+import re
+
+clothes = [
+           ["yellowhat", "headgear"],
+           ["bluesunglasses", "eyewear"],
+           ["green_turban", "headgear"]
+]
+
+key = [index[1] for index in clothes] # hash table key insert
+value = [] 
+
+# hash table value return function
+def valueIn():
+  i = 1
+  t = 0
+  for index in clothes:
+    cnt = clothes[t][1].count(key[i])
+    t+=1
+  return cnt
+
+"""
+def counter():
+  count = 0
+  i = 0
+  for index in clothes:
+    if index[i] == key:
+      count+=1
+    i +=1
+  return count 
+"""
+
+
+"""
+def eleReturn():
+  for index in clothes:
+    return 0
+def counter():
+
+valueIn()
+set(value)
+clothes.sort()
+"""
+
+
+print(valueIn())
+
+
+key = set(key) # 중복 제거
+print(value)

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>save</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <form action ="/save" accept-charset="UTF-8"
+            id="insertData" method = "POST">
+            <ul>
+                <li>
+                    <fieldset style="width:150">
+                        <legend>데이터 입력</legend>
+                        <!--POST_ID : <input type = "text" name = "postId"/><br><br>-->
+                        <!--PRODUCT_NUMBER : <input type = "text" name = "productNumber"/><br><br>-->
+                        POST_NAME : <input type = "text" name = "postName"/><br><br>
+                        POST_TEXT : <input type = "text" name = "postText"/><br><br>
+                        POST_DATE : <input type = "text" name = "postDate"/><br><br>
+                    </fieldset>
+                </li>
+                <button type="submit" form="insertData">전송</button>
+            </ul>
+        </form>
+        <form action="/delete" accept-charset="UTF-8"
+              id="deleteData" method="POST">
+            <button type="submit" form="deleteData">삭제</button>
+        </form>
+
+    </body>
+</html>
