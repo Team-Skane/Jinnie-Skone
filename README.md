@@ -1,10 +1,10 @@
 # Jinnie-Skone
 
 ----------------------------------------------------------------------------------------------------------
-##Description
+## Description
 게시물 데이터를 받아서 테이블에 저장 및 삭제
 
-##Environment
+## Environment
 
   - OS : Windows 10
   - Server : Spring Boot(Web 의존성)
